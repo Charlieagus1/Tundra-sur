@@ -1,0 +1,304 @@
+/* Estilo básico de la imagen del logo en el header */
+header div img {
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Estilo de la barra de navegación */
+.navBar {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.navBar li a {
+    text-decoration: none;
+    color: blueviolet;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.navBar li a:hover {
+    color: darkviolet;
+}
+
+/* Estilo de la sección principal */
+.sectionPrincipal {
+    background-color: darkgray;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+/* Estilo de fondo en la sección de plataforma */
+.fondoPlataforma {
+    background-color: darkgrey;
+    border-radius: 5px;
+    padding: 30px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Imagen de la historia */
+.imagenHistoria {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Estilo del contenedor de Spotify */
+.spotifyButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.spotifyButton {
+    width: 120px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.spotifyButton:hover {
+    transform: scale(1.1);
+}
+
+.deezerButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.deezerButton {
+    width: 120px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.deezerButton:hover {
+    transform: scale(1.1);
+}
+
+.appleButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.appleButton {
+    width: 120px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.appleButton:hover {
+    transform: scale(1.1);
+}
+
+.spotifyButton, .deezerButton, .appleButton {
+    width: 100%; /* Para que los botones se adapten al contenedor */
+}
+
+@media (max-width: 768px) {
+    .spotifyButtonContainer, .deezerButtonContainer, .appleButtonContainer {
+        gap: 10px; /* Espacio más pequeño entre botones */
+        margin-top: 10px; /* Ajustar el espaciado superior */
+    }
+}
+
+.imagenHistoria {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .imagenHistoria {
+        margin-bottom: 10px; /* Reducir espacio en dispositivos pequeños */
+    }
+}
+
+@media (max-width: 480px) {
+    .spotifyButton, .deezerButton, .appleButton {
+        width: 80%; /* Reducir los botones */
+        max-width: 120px; /* Limitar el tamaño máximo */
+    }
+}
+
+
+/* Sección de historia */
+.historiaSection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20%;
+}
+
+.imagenBanda {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+.textoHistoria {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+/* Estilo de los botones de las redes sociales */
+.socialButton {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Estilos para cada red social */
+.facebookButton {
+    background-color: #3b5998; /* Color de fondo de Facebook */
+    color: white;
+}
+
+.facebookButton:hover {
+    background-color: #2d4373; /* Cambio de color al pasar el cursor */
+}
+
+.instagramButton {
+    background-color: #E4405F; /* Color de fondo de Instagram */
+    color: white;
+}
+
+.instagramButton:hover {
+    background-color: #C13584; /* Cambio de color al pasar el cursor */
+}
+
+.youtubeButton {
+    background-color: #FF0000; /* Color de fondo de YouTube */
+    color: white;
+}
+
+.youtubeButton:hover {
+    background-color: #cc0000; /* Cambio de color al pasar el cursor */
+}
+
+.spotifyButton {
+    background-color: #1DB954;  /* Color verde de Spotify */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.spotifyButton:hover {
+    background-color: #1aa34a;  /* Un verde más oscuro al pasar el cursor */
+}
+
+.spotify {
+    background-color: #1DB954;  /* El color verde de Spotify */
+}
+
+/* Estilo para la sección de contacto */
+.contactoGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 50px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.infoContacto {
+    text-align: center;
+}
+
+.infoContacto h2 {
+    font-size: 2rem;
+    color: blueviolet;
+}
+
+/* Estilos para el contenedor de redes sociales */
+.redesSociales {
+    display: flex;
+    flex-direction: column; /* Apilar los botones verticalmente */
+    gap: 20px;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .contactoGrid {
+        grid-template-columns: 1fr; /* Una sola columna en tablet y móvil */
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .socialButton {
+        font-size: 1rem;
+    }
+}
+
+/* Estilo para la sección principal de proyectos */
+.proyectosPrincipal {
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proyectosPrincipal p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4b4b4b;
+    margin: 0;
+}
+
+/* 📱 Responsive Design para dispositivos móviles */
+@media (max-width: 768px) {
+    .proyectosPrincipal {
+        padding: 40px 15px;  /* Menos espacio en pantallas más pequeñas */
+    }
+
+    .proyectosPrincipal p {
+        font-size: 1.3rem;  /* Ajustar el tamaño del texto en dispositivos pequeños */
+    }
+}
+
+/* 👩‍💻 Responsive Design para tablet */
+@media (max-width: 1024px) {
+    .proyectosPrincipal {
+        padding: 45px 20px;  /* Espaciado ajustado en tabletas */
+    }
+
+    .proyectosPrincipal p {
+        font-size: 1.4rem;  /* Texto un poco más grande en tablet */
+    }
+}
+
+/* 🖥️ Diseño para Desktop */
+@media (min-width: 1025px) {
+    .proyectosPrincipal {
+        padding: 50px 40px;  /* Espaciado más grande en escritorio */
+    }
+
+    .proyectosPrincipal p {
+        font-size: 1.6rem;  /* Texto más grande en pantallas grandes */
+    }
+}
