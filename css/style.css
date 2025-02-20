@@ -119,6 +119,7 @@ header div img {
     margin-bottom: 20px;
 }
 
+
 @media (max-width: 768px) {
     .imagenHistoria {
         margin-bottom: 10px; /* Reducir espacio en dispositivos pequeños */
@@ -136,13 +137,20 @@ header div img {
 /* Sección de historia */
 .historiaSection {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     padding: 20%;
 }
 
+.historiaTitulo{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
 .imagenBanda {
-    width: 50%;
+    width: 80%;
     height: auto;
     object-fit: contain;
 }
@@ -150,6 +158,8 @@ header div img {
 .textoHistoria {
     font-size: 1.2rem;
     text-align: justify;
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* Estilo de los botones de las redes sociales */
